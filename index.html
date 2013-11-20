@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<title>Crossfit Generator</title>
+</head>
+
+<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <ul class="nav">
+		      <li><a href="index.html">Home</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+	<div class="container-fluid">
+
+		<div class="text-box">
+			<h4 class="wod-description well">Ready... Set... Sweat!</h4>
+		</div>
+		<br>
+
+		<div class="wod_button">
+			<button class="btn btn-primary">Generate WOD</button>
+		</div>
+		<br>
+
+		<h2>Current WOD's</h2>
+		<div id="wods"></div>
+		<script type="text/template" id="wodTemplate">
+			<div id="wod">
+				<p>&#8226; Description: <%= description %>></p>
+			</div>
+		</script>
+
+<!-- 		<br>
+		<h2>Create a New WOD</h2>
+		<form id="add">
+		  <label>Description</label>
+		  <input id="description" type="text" />
+		  <label>Creator</label>
+		  <input id="creator" type="text" />
+		  <br>
+		  <input type="submit" value="save" />
+		</form>	 -->
+
+	</div>		
+	
+	<br>
+	<footer>
+		<p>Copyright 2013 Aimee Knight</p>
+	</footer>	
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+<script type="text/javascript" src="javascripts/wod_form.js"></script>
+</body>
+
+</html>
