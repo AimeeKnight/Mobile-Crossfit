@@ -90,7 +90,7 @@ $(function() {
   var mainView = new MainView();
 });
 
-$('button').on('click', function() {
+$('.btn-lg').on('click', function() {
   rand = Math.floor(Math.random() * wods.length);
   $('.wod-description').text(wods[rand].description);
 });

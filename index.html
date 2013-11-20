@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-	<title>Crossfit Generator</title>
-</head>
-
-<body>
-	<div class="navbar navbar-default navbar-fixed-top">
-   	<div class="container">
-      <div class="navbar-header">
-        <a href="index.html" class="navbar-brand">Crossfit Generator</a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar-main">
-        <ul class="nav navbar-nav"></ul>
-      </div>
-    </div>
-  </div>
-
-	<div class="container-fluid">
-
-		<div class="text-box .col-lg-4">
+<!-- 		<div class="text-box .col-lg-4">
 			<h4 class="wod-description well">Ready... Set... Sweat!</h4>
 		</div>
 		<br>
@@ -30,15 +6,7 @@
 		<div class="wod_button">
 			<button class="btn btn-primary">Generate WOD</button>
 		</div>
-		<br>
-
-		<h2>Current WOD's</h2>
-		<div id="wods"></div>
-		<script type="text/template" id="wodTemplate">
-			<div id="wod">
-				<p>&#8226; Description: <%= description %>></p>
-			</div>
-		</script>
+		<br> -->
 
 <!-- 		<br>
 		<h2>Create a New WOD</h2>
@@ -51,17 +19,96 @@
 		  <input type="submit" value="save" />
 		</form>	 -->
 
-	</div>		
-	
-	<br>
-	<footer>
-		<p>Copyright 2013 Aimee Knight</p>
-	</footer>	
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
-<script type="text/javascript" src="javascripts/wod_form.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Crossfit Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="../bower_components/bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Crossfit Generator</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"></li>
+          </ul>
 
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://aimeemarieknight.com/" target="_blank">A site by Aimee Knight</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+ 
+      <!-- Containers
+      ================================================== -->
+      <div class="main">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="container">Crossfit Generator</h1>
+            </div>
+
+            <div class="bs-example">
+              <div class="jumbotron">
+                <h2>Ready... Set... Sweat!</h2>
+                <p class="wod-description"><br></p><br>
+              </div>
+            </div>
+            <p><a class="btn btn-primary btn-lg">Generate WOD</a></p>
+          </div>
+        </div>
+
+        <div class="page-header" id="banner">
+        	<div class="row">
+	          <div class="col-lg-6">
+	            <h1>Current WOD's</h1>
+	            	<div id="wods"></div>
+									<script type="text/template" id="wodTemplate">
+										<div id="wod">
+											<p>&#8226; Description: <%= description %>></p>
+										</div>
+									</script>
+	          </div>
+	        </div>
+      	</div>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            
+            <p>Made by <a href="http://aimeemarieknight.com">Aimee Knight</a>. Contact her at <a href="mailto:aimeemarieknight@gmail.com">aimeemarieknight@gmail.com</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
+
+          </div>
+        </div>
+        
+      </footer>  
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+		<script type="text/javascript" src="javascripts/wod_form.js"></script>
+  </body>
 </html>
