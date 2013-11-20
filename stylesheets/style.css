@@ -1,6 +1,6 @@
 /********** HEADER **********/
 .container-fluid {
-	margin-top: 55px;
+	margin-top: 75px;
 }
 
 /********** FOOTER **********/
@@ -21,8 +21,8 @@ footer {
 }
 .wod-description {
 	text-align: center;
-	background-color: #27ae60;
-	color: #fff;
+/*	background-color: #27ae60;
+	color: #fff;*/
 }
 .text-box {
 	height: 150px;
