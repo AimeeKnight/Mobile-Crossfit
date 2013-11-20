@@ -1,6 +1,10 @@
 /********** HEADER **********/
 .container-fluid {
+<<<<<<< HEAD
 	margin-top: 55px;
+=======
+	margin-top: 75px;
+>>>>>>> gh-pages
 }
 
 /********** FOOTER **********/
@@ -21,8 +25,13 @@ footer {
 }
 .wod-description {
 	text-align: center;
+<<<<<<< HEAD
 	background-color: #27ae60;
 	color: #fff;
+=======
+/*	background-color: #27ae60;
+	color: #fff;*/
+>>>>>>> gh-pages
 }
 .text-box {
 	height: 150px;
