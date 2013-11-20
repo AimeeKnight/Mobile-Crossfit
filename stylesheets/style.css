@@ -1,0 +1,29 @@
+/********** HEADER **********/
+.container-fluid {
+	margin-top: 55px;
+}
+
+/********** FOOTER **********/
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+/********** CROSSFIT **********/
+.wod h4 {
+	text-align: center;
+	width: auto;
+}
+.wod_button {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.wod-description {
+	text-align: center;
+	background-color: #27ae60;
+	color: #fff;
+}
+.text-box {
+	height: 150px;
+}
