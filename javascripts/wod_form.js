@@ -31,7 +31,6 @@ var wods = [
   { description: "KB overhead thruster squat 21, 15, 9 reps, pullups 21, 15, 9 reps" },
 ];
 
-
 var archiveCollection = new Archive(wods);
 
 var WodView = Backbone.View.extend({
@@ -90,6 +89,7 @@ $(function() {
   var mainView = new MainView();
 });
 
+// Crossfit generator button
 $('.btn-lg').on('click', function() {
   rand = Math.floor(Math.random() * wods.length);
   $('.wod-description').text(wods[rand].description);
